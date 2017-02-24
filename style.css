@@ -1,0 +1,94 @@
+body {
+	position: relative;
+	background: url(images/sydney.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.chris {
+	width: 20em;
+	position: absolute;
+	left: calc(50% - 10em);
+	bottom: -40em;
+	transition-duration: 2s;
+	transform-origin: bottom;
+}
+
+.chris.in {
+	bottom: -10em;
+	transition-duration: 0.6s;
+}
+
+.chris.left {
+	transform: rotate(-2deg);
+	transition-timing-function: cubic-bezier(0.55, -0.05, 0.24, 2.16);
+}
+
+.chris.right {
+	transform: rotate(2deg);
+	transition-timing-function: cubic-bezier(0.55, -0.05, 0.24, 2.16);
+}
+
+.head, .body {
+	background-size: 100% 100%;
+	width: 100%;
+}
+
+.head {
+	background-image: url(images/chris-head.png);
+	bottom: 30em;
+	height: 10em;
+	transform-origin: bottom left;
+	transition-duration: 0.3s;
+	transition-timing-function: cubic-bezier(0.55, -0.05, 0.24, 2.16);
+}
+
+.head.open {
+	transform: rotate(-30deg);
+}
+
+.head.halfway {
+	transform: rotate(-20deg);
+}
+
+html {
+	overflow: hidden;
+}
+
+.body {
+	background-image: url(images/chris-body.png);
+	height: 30em;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.roo {
+	background-image: url(images/wallaby1.gif);
+	background-size: 100% 100%;
+	height: 5em;
+	width: 5em;
+	position: absolute;
+}
+
+.roo.one {
+	bottom: 20%;
+	left: 5%;
+}
+
+.roo.two {
+	bottom: 25%;
+	right: 5%;
+	transform: scaleX(-1);
+}
+
+.roo.three {
+	bottom: 40%;
+	left: 15%;
+}
+
+.roo.four {
+	bottom: 35%;
+	right: 15%;
+	transform: scaleX(-1);
+}
+
