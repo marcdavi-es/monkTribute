@@ -44,7 +44,7 @@ body {
 }
 
 .head.open {
-	transform: rotate(-30deg);
+	transform: rotate(-10deg);
 }
 
 .head.halfway {
